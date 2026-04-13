@@ -2,18 +2,18 @@ export const data = {
     bride: {
         L: {
             id: 1,
-            name: 'Lorem Ipsum',
-            child: 'Putra ke lorem',
-            father: 'Lorem',
-            mother: 'Ipsum',
+            name: 'Tehmeen Shaikh',
+            child: 'Daughter of',
+            father: 'Mehboob Shaikh',
+            mother: 'Faimunnisa Shaikh',
             image: './src/assets/images/cowo.png'
         },
         P: {
             id: 2,
-            name: 'Ipsum Lorem',
-            child: 'Putri ke lorem',
-            father: 'Lorem',
-            mother: 'Ipsum',
+            name: 'Mohammed Ahmed Azam',
+            child: 'Son of Late Mohammed Azam',
+            father: 'Mohammed Azam',
+            mother: 'Bade Mami',
             image: './src/assets/images/cewe.png'
         },
 
@@ -22,31 +22,31 @@ export const data = {
 
     time: {
         marriage: {
-            year: '2030',
-            month: 'November',
-            date: '14',
-            day: 'Kamis',
+            year: '2026',
+            month: 'June',
+            date: '04',
+            day: 'Thursday',
             hours: {
                 start: '08.00',
-                finish: 'Selesai'
+                finish: 'Finished'
             }
         },
         reception: {
-            year: '2024',
-            month: 'November',
-            date: '14',
-            day: 'Kamis',
+            year: '2026',
+            month: 'June',
+            date: '06',
+            day: 'Saturday',
             hours: {
-                start: '11.00',
-                finish: 'Selesai'
+                start: '08.00',
+                finish: 'Finished'
             }
         },
-        address: 'Kp. Lorem, RT 000/ RW 000, Desa.Lorem, Kec.Ipsum, Kab.Lorem, Lorem (1234)'
+        address: 'P9H4+VG6, Mannaekhelli, Karnataka 585227'
     },
 
     link: {
         calendar: 'https://calendar.app.google/oSVLRMYC79GzuA4f9',
-        map: 'https://maps.app.goo.gl/q1Ask2Jgd4ekiiKBA',
+        map: 'https://www.google.com/maps/dir//P9H4%2BVG6+Noor+Function+Hall,+Mannaekhelli,+Karnataka+585227/@17.7296727,77.3536914,17z/data=!4m17!1m7!3m6!1s0x3bced21febd5f4cf:0x7cd3e8b4833946db!2sNoor+Function+Hall!8m2!3d17.7296727!4d77.3562663!16s%2Fg%2F11c44f7v5c!4m8!1m0!1m5!1m1!1s0x3bced21febd5f4cf:0x7cd3e8b4833946db!2m2!1d77.3562684!2d17.7296935!3e3?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D',
     },
 
     galeri: [
@@ -75,13 +75,13 @@ export const data = {
     bank: [
         {
             id: 1,
-            name: 'Lorem Ipsum',
+            name: 'Tehmeen Shaikh',
             icon: './src/assets/images/bca.png',
             rekening: '12345678'
         },
         {
             id: 2,
-            name: 'Ipsum Lorem',
+            name: 'Mohammed Ahmed Azam',
             icon: './src/assets/images/bri.png',
             rekening: '12345678'
         },
@@ -100,25 +100,25 @@ export const data = {
         },
         {
             id: 2,
-            teks: 'Mempelai',
+            teks: 'Bride',
             icon: 'bx bxs-group',
             path: '#bride',
         },
         {
             id: 3,
-            teks: 'Tanggal',
+            teks: 'Date',
             icon: 'bx bxs-calendar-check',
             path: '#time',
         },
         {
             id: 4,
-            teks: 'Galeri',
+            teks: 'Gallery',
             icon: 'bx bxs-photo-album',
             path: '#galeri',
         },
         {
             id: 5,
-            teks: 'Ucapan',
+            teks: 'Speech',
             icon: 'bx bxs-message-rounded-dots',
             path: '#wishas',
         },
