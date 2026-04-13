@@ -20,8 +20,8 @@ export const wishas = () => {
     const listItemBank = (data) => (
         `  <figure data-aos="zoom-in" data-aos-duration="1000">
                 <img src=${data.icon} alt="bank icon animation">
-                <figcaption>No. Rekening ${data.rekening.slice(0, 4)}xxxx <br>A.n ${data.name}</figcaption>
-                <button data-rekening=${data.rekening} aria-label="copy rekening">Salin No. Rekening</button>
+                <figcaption>Account No.${data.rekening.slice(0, 4)}xxxx <br>A.n ${data.name}</figcaption>
+                <button data-rekening=${data.rekening} aria-label="Copy of account statement">Copy Account Number</button>
            </figure>`
     );
 
@@ -36,12 +36,12 @@ export const wishas = () => {
                 const rekening = e.target.dataset.rekening;
                 try {
                     await navigator.clipboard.writeText(rekening);
-                    button.textContent = 'Berhasil menyalin';
+                    button.textContent = 'Copied successfully';
                 } catch (error) {
                     console.log(`Error : ${error.message}`);
                 } finally {
                     setTimeout(() => {
-                        button.textContent = 'Salin No. Rekening';
+                        button.textContent = 'Copy Account Number';
                     }, 2000);
                 }
             });
@@ -107,7 +107,7 @@ export const wishas = () => {
         const comentar = {
             id: generateRandomId(),
             name: e.target.name.value,
-            status: e.target.status.value === 'y' ? 'Hadir' : 'Tidak Hadir',
+            status: e.target.status.value === 'y' ? 'Present' : 'Absent',
             message: e.target.message.value,
             date: getCurrentDateTime(),
             color: generateRandomColor(),
@@ -125,7 +125,7 @@ export const wishas = () => {
         } catch (error) {
             return `Error : ${error.message}`;
         } finally {
-            buttonForm.textContent = 'Kirim';
+            buttonForm.textContent = 'Send';
             form.reset();
         }
     });
